@@ -1,6 +1,223 @@
+@mixin float-clear{
+    &:after{
+        display:block;
+        content:'';
+        clear: both;
+    }
+}
+
+@mixin flex-between{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}    
+@mixin after-bar{
+&:after{
+    content:'';
+    display:inline-block;
+    width:2px;
+    height:10px;
+    background:#ddd;
+    color:gray;
+    margin:0 20px;
+}    
+}
+// @each $shopping-obj in 222, 0710_K5,0710_K8,0710_K11,0710_K14,0710_K17,0710_K20,0710_K23,0710_K26{
+ 
+// }
+
+$shopping-total: 9;
+@for $i from 1 to $shopping-total {
+  .shopping_img#{$i} {    
+    background:url('img/shopping_img#{$i}.jpg') no-repeat center;  
+    background-size:cover;
+    width:100%;
+    height:159px;
+  }
+}
+
+
 .wrap{
     width:100%;
     .sub_banner{
+        width:100%;
+        height:70px;
+        background: url('./img/1591920354198-36758.gif') no-repeat center;
+        a{
+            text-indent: -9999999px;
+            display: block;
+            width:100%;
+            height:100%;
+        }
+     }//sub_banner
+    .header{
+        .header_nav{
+            padding:10px 0;            
+            padding-right:40px;
+            border-bottom:1px solid #f0f0f0;
+            @include float-clear;
+            .header_nav_wrap{
+                float:right;
+                div{
+                    float:left;
+                    ul{               
+                        &:after{
+                            content:'';
+                            display:inline-block;
+                            width:2px;
+                            height:10px;
+                            background:#ddd;
+                            color:gray;
+                            margin:0 20px;
+                        }           
+                        li{
+                            float: left;         
+                            button{
+                                border:none;
+                                padding:0;
+                                background:none;
+                                outline: none;
+                                text-transform: uppercase;
+                                font-size:12px;
+                                &:after{
+                                    content:"·";
+                                    display:inline-block;
+                                    margin:0 5px;
+                                }
+                            }
+                            &:last-child button{
+                                &:after{
+                                    display:none;
+                                }
+                            }
+                        }
+                    }
+                    a{
+                        text-transform: uppercase;
+                        font-size:13px;
+                        font-weight: 700;
+                        letter-spacing: -0.1;
+                        &::before{
+                            content:'';
+                            width:12px;
+                            height:12px;
+                            display:inline-block;
+                            background:url('img/gnb_ico_ssgcom.png') no-repeat 100% 100%;
+                            margin-right: 5px;
+                            vertical-align: bottom;
+    
+                        }
+                    }
+                }    
+            }
+    
+        }
+        .nav{
+            @include float-clear;
+            @include flex-between;
+            height:70px;
+            .logo{
+                background:url('/img/gnb_logo.png') no-repeat center;
+                width:200px;
+                height:100%;
+                text-indent:-999999px;         
+            }
+            .nav_list{
+                
+                ul{
+                    @include float-clear;
+                    line-height:70px;
+                    li{
+                        float:left;   
+                        margin-right:20px;
+                        a{
+                            display:block;
+                            font-size:14px;
+                            color:#333;
+                            letter-spacing: -0.1rem;
+                            img{
+                                vertical-align: middle;
+                            }
+                        }     
+                    }
+                }
+            }
+            .nav_login{
+                ul{
+                    li{
+                        float:left;
+                        &:last-child a{
+                            &:after{
+                                display:none;
+                            }
+                            &:before{
+                                content:'';
+                                display:inline-block;
+                                background:url('./img/gnb_ico_search.png') no-repeat;
+                                width:16px;
+                                height:16px;
+                                vertical-align: middle;
+                                margin-right:5px;
+                            }
+                        }
+                        a{
+                            font-size:13px;
+                            @include after-bar;
+                            &:before{
+                                content:'';
+                                display:inline-block;                                
+                                background:url('./img/ico_login_id.png') no-repeat;
+                                width:14px;
+                                height:16px;
+                                vertical-align: middle;
+                                margin-right:5px;
+                            }                                                        
 
+                        }
+                    }
+                }
+            }
+        }
     }
-}
+    // header
+    .section{
+        padding:180px 0;
+        .section_tit{
+            font-size: 60px;
+            text-transform: capitalize;
+            text-align: center;
+            line-height: 1.2;
+            color:#222;
+            letter-spacing: -0.1rem;
+        }
+        
+    } //section common    
+    .shopping{
+        p{
+            margin-top:53px;
+            text-align: center;
+        }
+        div{
+            ul{
+                @include flex-between;
+                flex-wrap:wrap;
+                
+                li{
+                    border:1px solid #000;
+                    margin:1rem;
+                    flex:1 1 23%;
+                    box-sizing: border-box;
+                    a{
+                        display:block;
+                        width:100%;
+                        height:100%;
+                        .shopping_img{
+                            border:1px solid #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+} //wrap

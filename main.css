@@ -1,4 +1,288 @@
+@charset "UTF-8";
+.shopping_img1 {
+  background: url("img/shopping_img1.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 159px;
+}
+
+.shopping_img2 {
+  background: url("img/shopping_img2.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 159px;
+}
+
+.shopping_img3 {
+  background: url("img/shopping_img3.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 159px;
+}
+
+.shopping_img4 {
+  background: url("img/shopping_img4.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 159px;
+}
+
+.shopping_img5 {
+  background: url("img/shopping_img5.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 159px;
+}
+
+.shopping_img6 {
+  background: url("img/shopping_img6.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 159px;
+}
+
+.shopping_img7 {
+  background: url("img/shopping_img7.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 159px;
+}
+
+.shopping_img8 {
+  background: url("img/shopping_img8.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 159px;
+}
+
 .wrap {
   width: 100%;
+}
+
+.wrap .sub_banner {
+  width: 100%;
+  height: 70px;
+  background: url("./img/1591920354198-36758.gif") no-repeat center;
+}
+
+.wrap .sub_banner a {
+  text-indent: -9999999px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .header .header_nav {
+  padding: 10px 0;
+  padding-right: 40px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.wrap .header .header_nav:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.wrap .header .header_nav .header_nav_wrap {
+  float: right;
+}
+
+.wrap .header .header_nav .header_nav_wrap div {
+  float: left;
+}
+
+.wrap .header .header_nav .header_nav_wrap div ul:after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 10px;
+  background: #ddd;
+  color: gray;
+  margin: 0 20px;
+}
+
+.wrap .header .header_nav .header_nav_wrap div ul li {
+  float: left;
+}
+
+.wrap .header .header_nav .header_nav_wrap div ul li button {
+  border: none;
+  padding: 0;
+  background: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.wrap .header .header_nav .header_nav_wrap div ul li button:after {
+  content: "·";
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.wrap .header .header_nav .header_nav_wrap div ul li:last-child button:after {
+  display: none;
+}
+
+.wrap .header .header_nav .header_nav_wrap div a {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.1;
+}
+
+.wrap .header .header_nav .header_nav_wrap div a::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: url("img/gnb_ico_ssgcom.png") no-repeat 100% 100%;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.wrap .header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+.wrap .header .nav:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.wrap .header .nav .logo {
+  background: url("/img/gnb_logo.png") no-repeat center;
+  width: 200px;
+  height: 100%;
+  text-indent: -999999px;
+}
+
+.wrap .header .nav .nav_list ul {
+  line-height: 70px;
+}
+
+.wrap .header .nav .nav_list ul:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.wrap .header .nav .nav_list ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+.wrap .header .nav .nav_list ul li a {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: -0.1rem;
+}
+
+.wrap .header .nav .nav_list ul li a img {
+  vertical-align: middle;
+}
+
+.wrap .header .nav .nav_login ul li {
+  float: left;
+}
+
+.wrap .header .nav .nav_login ul li:last-child a:after {
+  display: none;
+}
+
+.wrap .header .nav .nav_login ul li:last-child a:before {
+  content: '';
+  display: inline-block;
+  background: url("./img/gnb_ico_search.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.wrap .header .nav .nav_login ul li a {
+  font-size: 13px;
+}
+
+.wrap .header .nav .nav_login ul li a:after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 10px;
+  background: #ddd;
+  color: gray;
+  margin: 0 20px;
+}
+
+.wrap .header .nav .nav_login ul li a:before {
+  content: '';
+  display: inline-block;
+  background: url("./img/ico_login_id.png") no-repeat;
+  width: 14px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.wrap .section {
+  padding: 180px 0;
+}
+
+.wrap .section .section_tit {
+  font-size: 60px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.1rem;
+}
+
+.wrap .shopping p {
+  margin-top: 53px;
+  text-align: center;
+}
+
+.wrap .shopping div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrap .shopping div ul li {
+  border: 1px solid #000;
+  margin: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 23%;
+          flex: 1 1 23%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .shopping div ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .shopping div ul li a .shopping_img {
+  border: 1px solid #000;
 }
 /*# sourceMappingURL=main.css.map */
